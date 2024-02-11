@@ -2,6 +2,9 @@
 
 Pangolin is a tool that sits on a port and, when receiving an HTTP request, will start a process.
 
+> [!NOTE]
+> For a more production-ready approach, you might want to look into systemd's [Socket Activation](https://0pointer.de/blog/projects/socket-activated-containers.html).
+
 It's designed for off-by-default services that only need to boot up when you access them -- think, for example, your
 checklist application or document manager.
 
