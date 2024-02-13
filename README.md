@@ -21,7 +21,7 @@ In a way, it's a much simplified version of systemd's [Socket Activation](https:
 That means you can use Pangolin with applications and frameworks that don't have builtin support for socket activation.
 
 ## TODO
-- [ ] Provide a mode for APIs that either indicates to [retry the request in a little while](https://stackoverflow.com/questions/17862015/http-statuscode-to-retry-same-request), or uses temporary redirects to put the request in a "holding pattern" while the service is starting up. 
+- [ ] Provide a mode for APIs that either indicates to [retry the request in a little while](https://stackoverflow.com/questions/17862015/http-statuscode-to-retry-same-request), or uses temporary redirects to put the request in a "holding pattern" while the service is starting up. Specify the behavior for making the first request a POST request. 
 - [ ] (optional) Health-check the service. If the service doesn't require liveness anymore, ask it to shut down
   gracefully.
 - [ ] (optional) When available, bind the port again.
